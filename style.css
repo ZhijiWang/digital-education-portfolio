@@ -392,18 +392,38 @@ button:focus-visible,
   padding-bottom: clamp(5rem, 10vw, 9rem);
 }
 
-.approved-copy {
+.student-intro {
   max-width: var(--reading-width);
   margin-bottom: clamp(4rem, 8vw, 7rem);
-  padding: 1.25rem 1.5rem;
-  border: 1px dashed var(--line-dark);
-  border-radius: var(--radius);
-  background: transparent;
-  color: var(--ink-soft);
+  padding: 1.5rem 0;
+  border-block: 1px solid var(--line);
 }
 
-.approved-copy p {
+.student-intro p {
   margin: 0;
+  color: var(--ink-soft);
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.8;
+}
+
+.check-copy {
+  margin: 1rem 0 0;
+  color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.check-copy strong {
+  color: var(--ink);
+}
+
+.source-note {
+  margin-top: 1rem !important;
+  font-size: 0.9rem;
+}
+
+.transcript p {
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .five-c {
