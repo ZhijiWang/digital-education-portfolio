@@ -1,3 +1,199 @@
+:root {
+  --vermilion: #a44736;
+  --vermilion-deep: #7f3027;
+  --vermilion-soft: #f0ded8;
+  --ink-black: #24231f;
+}
+
+.student-resource {
+  --chinese-serif: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", Georgia, serif;
+}
+
+.resource-hero {
+  position: relative;
+  overflow: hidden;
+  padding-right: clamp(5rem, 12vw, 9rem);
+}
+
+.resource-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--vermilion) 0 86px, var(--line) 86px 100%);
+}
+
+.subject-seal {
+  position: absolute;
+  top: clamp(4.2rem, 9vw, 7.5rem);
+  right: 0;
+  display: grid;
+  width: clamp(3.3rem, 6vw, 4.5rem);
+  aspect-ratio: 1;
+  place-items: center;
+  border: 2px solid var(--vermilion);
+  color: var(--vermilion);
+  font-family: var(--chinese-serif);
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.student-resource .eyebrow,
+.student-resource .section-kicker,
+.student-resource .challenge-label {
+  color: var(--vermilion-deep);
+}
+
+.student-resource [lang="zh-Hans"] {
+  font-family: var(--chinese-serif);
+}
+
+.worked-example {
+  position: relative;
+  border-top-color: var(--vermilion);
+}
+
+.worked-example::before {
+  content: "语境";
+  position: absolute;
+  top: -0.85rem;
+  right: clamp(1rem, 4vw, 3rem);
+  padding: 0 0.55rem;
+  background: var(--paper);
+  color: var(--vermilion);
+  font-family: var(--chinese-serif);
+  font-size: 0.84rem;
+  letter-spacing: 0.18em;
+}
+
+.worked-example h2 [lang="zh-Hans"] {
+  color: var(--vermilion-deep);
+  font-size: 1.08em;
+}
+
+.scenario-list {
+  gap: 0;
+  border-top: 1px solid var(--line);
+}
+
+.scenario-item {
+  position: relative;
+  padding-left: 1.25rem;
+  border-left: 3px solid transparent;
+}
+
+.scenario-item:hover {
+  border-left-color: var(--vermilion);
+}
+
+.scenario-chinese {
+  color: var(--ink-black);
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+}
+
+.guidance-number {
+  color: var(--vermilion) !important;
+}
+
+.guidance-item {
+  position: relative;
+}
+
+.guidance-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border-top: 1px solid var(--vermilion-soft);
+  border-right: 1px solid var(--vermilion-soft);
+}
+
+.privacy-note {
+  border-left: 5px solid var(--vermilion) !important;
+  background: #f3e7e1 !important;
+}
+
+.responsibility-strip {
+  margin-bottom: clamp(4rem, 8vw, 7rem);
+  padding: clamp(2rem, 4vw, 3rem) 0;
+  border-block: 1px solid var(--line-dark);
+}
+
+.responsibility-strip h2 {
+  max-width: 650px;
+  margin-bottom: 2rem;
+}
+
+.responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+.responsibility-grid article {
+  min-height: 150px;
+  padding: 1.35rem 1.5rem 1.2rem 0;
+  border-top: 3px solid var(--vermilion);
+}
+
+.responsibility-grid article + article {
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--line);
+}
+
+.responsibility-role {
+  margin-bottom: 0.5rem;
+  color: var(--vermilion-deep);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.responsibility-grid h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.25rem;
+}
+
+.responsibility-grid p:last-child {
+  margin-bottom: 0;
+  color: var(--ink-soft);
+}
+
+.classroom-challenge {
+  position: relative;
+  overflow: hidden;
+  background: var(--ink-black);
+}
+
+.classroom-challenge::before {
+  content: "选择";
+  position: absolute;
+  top: 1.4rem;
+  right: 1.6rem;
+  color: rgba(255, 255, 255, 0.09);
+  font-family: var(--chinese-serif);
+  font-size: clamp(3rem, 9vw, 6rem);
+  line-height: 1;
+}
+
+.classroom-challenge .section-kicker.light {
+  color: #e6a89a;
+}
+
+.challenge-chinese {
+  color: var(--white);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  letter-spacing: 0.02em;
+}
+
 .choice-set {
   margin: 1.75rem 0 0;
   padding: 0;
@@ -20,15 +216,15 @@
   align-items: center;
   gap: 0.85rem;
   padding: 0.95rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.045);
   transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
 }
 
 .choice-option:hover {
-  border-color: rgba(255, 255, 255, 0.7);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: #df9a8b;
+  background: rgba(164, 71, 54, 0.16);
 }
 
 .choice-option input[type="radio"] {
@@ -36,7 +232,7 @@
   width: 1.15rem;
   height: 1.15rem;
   margin: 0;
-  accent-color: #ffffff;
+  accent-color: var(--vermilion);
   cursor: pointer;
 }
 
@@ -49,17 +245,17 @@
 }
 
 .choice-option:has(input:checked) {
-  border-color: var(--white);
-  background: var(--white);
+  border-color: #e6a89a;
+  background: var(--vermilion);
   transform: translateX(3px);
 }
 
 .choice-option:has(input:checked) label {
-  color: var(--ink);
+  color: var(--white);
 }
 
 .choice-option:has(input:checked) input[type="radio"] {
-  accent-color: var(--accent-deep);
+  accent-color: var(--white);
 }
 
 .choice-option input[type="radio"]:focus-visible {
@@ -70,8 +266,8 @@
 .choice-reflection {
   margin-top: 1.25rem;
   padding: 1rem 1.1rem;
-  border-left: 3px solid var(--white);
-  background: rgba(255, 255, 255, 0.08);
+  border-left: 3px solid #e6a89a;
+  background: rgba(164, 71, 54, 0.2);
 }
 
 .choice-reflection p {
@@ -84,4 +280,43 @@
 
 .choice-reflection[hidden] {
   display: none;
+}
+
+.curriculum-connection {
+  border-top: 3px solid var(--vermilion) !important;
+}
+
+.curriculum-connection h2 {
+  color: var(--vermilion-deep);
+}
+
+.evidence-note a,
+.curriculum-connection a {
+  text-decoration-color: var(--vermilion);
+}
+
+@media (max-width: 760px) {
+  .resource-hero {
+    padding-right: 0;
+  }
+
+  .subject-seal {
+    position: static;
+    width: 3.4rem;
+    margin-top: 2rem;
+  }
+
+  .responsibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .responsibility-grid article {
+    min-height: 0;
+    padding: 1.25rem 0;
+  }
+
+  .responsibility-grid article + article {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
