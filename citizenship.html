@@ -6,6 +6,7 @@
   <meta name="description" content="Can AI Translate This? A context and judgement guide for Year 7–8 Chinese language learners.">
   <title>Can AI Translate This? | Digital Education Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="interaction.css">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -118,14 +119,33 @@
             </div>
           </div>
 
-          <p class="challenge-question">AI gives three possible translations:</p>
-          <ul class="ai-option-list">
-            <li>“You’ve worked hard, teacher.”</li>
-            <li>“Thanks for all your hard work.”</li>
-            <li>“You must be tired.”</li>
-          </ul>
+          <p class="challenge-question">AI gives three possible translations.</p>
 
-          <p class="response-stem">Which one would you use? Would you change any of them? Explain what the speaker is trying to communicate.</p>
+          <fieldset class="choice-set">
+            <legend>Choose the version you would use in this situation.</legend>
+            <div class="choice-options">
+              <div class="choice-option">
+                <input type="radio" id="choice-one" name="translation-choice" data-label="You’ve worked hard, teacher.">
+                <label for="choice-one">“You’ve worked hard, teacher.”</label>
+              </div>
+              <div class="choice-option">
+                <input type="radio" id="choice-two" name="translation-choice" data-label="Thanks for all your hard work.">
+                <label for="choice-two">“Thanks for all your hard work.”</label>
+              </div>
+              <div class="choice-option">
+                <input type="radio" id="choice-three" name="translation-choice" data-label="You must be tired.">
+                <label for="choice-three">“You must be tired.”</label>
+              </div>
+              <div class="choice-option">
+                <input type="radio" id="choice-four" name="translation-choice" data-label="I would rewrite it.">
+                <label for="choice-four">I would rewrite it.</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div id="choice-reflection" class="choice-reflection" aria-live="polite" hidden>
+            <p><strong>You chose:</strong> <span id="selected-choice"></span> What in the situation makes this choice work for you?</p>
+          </div>
         </section>
 
         <aside class="curriculum-connection" aria-labelledby="curriculum-title">
@@ -150,5 +170,7 @@
       <p>University of Canberra</p>
     </div>
   </footer>
+
+  <script src="citizenship.js"></script>
 </body>
 </html>
