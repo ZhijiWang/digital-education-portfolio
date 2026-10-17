@@ -1,0 +1,76 @@
+.choice-set {
+  margin: 1.75rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.choice-set legend {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.choice-options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.choice-option {
+  position: relative;
+}
+
+.choice-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.choice-option label {
+  display: block;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+  cursor: pointer;
+  line-height: 1.45;
+  transition: background 150ms ease, border-color 150ms ease, transform 150ms ease;
+}
+
+.choice-option label:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.choice-option input:focus-visible + label {
+  outline: 3px solid #8fd3ea;
+  outline-offset: 3px;
+}
+
+.choice-option input:checked + label {
+  border-color: var(--white);
+  background: var(--white);
+  color: var(--ink);
+  transform: translateX(3px);
+}
+
+.choice-reflection {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--white);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.choice-reflection p {
+  margin: 0;
+}
+
+.choice-reflection strong {
+  color: var(--white);
+}
+
+.choice-reflection[hidden] {
+  display: none;
+}
