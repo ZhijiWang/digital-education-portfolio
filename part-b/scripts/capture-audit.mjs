@@ -11,7 +11,14 @@ const page=await browser.newPage({viewport:{width:1120,height:900},deviceScaleFa
 async function open(rel){
  await page.goto(pathToFileURL(resolve(base,rel)).href,{waitUntil:'load'});
  await page.evaluate(()=>document.fonts.ready);
- await page.evaluate(()=>{ const el=document.activeElement; if(el instanceof HTMLElement)el.blur(); });
+ await page.evaluate(()=>{
+   const el=document.activeElement;
+   if(el instanceof HTMLElement)el.blur();
+   // Hide the transient focus overlay in the content-only screenshot crops.
+   // The original web page and its keyboard skip link are unchanged.
+   const skip=document.querySelector('.skip-link');
+   if(skip instanceof HTMLElement)skip.style.setProperty('visibility','hidden','important');
+ });
 }
 async function capture(path,locator){
  await locator.scrollIntoViewIfNeeded();
