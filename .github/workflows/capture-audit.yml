@@ -1,0 +1,36 @@
+name: Capture authentic Part B audit evidence
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/capture-audit.yml"
+      - "part-b/scripts/capture-audit.mjs"
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser tooling
+        run: |
+          npm install --no-save --no-package-lock playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Capture original and retrofit from checked-out sources
+        run: node part-b/scripts/capture-audit.mjs
+      - name: Commit image evidence
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add part-b/assets/audit/*.png
+          if git diff --cached --quiet; then
+            echo "Screenshots unchanged"
+          else
+            git commit -m "Add authentic before-and-after audit screenshots"
+            git push
+          fi

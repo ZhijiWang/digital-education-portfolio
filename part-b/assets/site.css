@@ -111,3 +111,19 @@ textarea{min-height:110px;resize:vertical}
 .retro-choice:has(input:checked){border-color:var(--teal);background:var(--soft)}
 .retro-choice:focus-within{outline:3px solid var(--focus);outline-offset:3px}
 .retro-choice span{flex:1}
+
+/* APA 7 reference list: alphabetic order, unnumbered, hanging indents */
+.refs{max-width:860px;margin-top:1.4rem;font-size:.94rem;line-height:1.6}
+.refs p{padding-left:2rem;text-indent:-2rem;margin:0 0 1.1rem;overflow-wrap:anywhere}
+.refs a{overflow-wrap:anywhere}
+
+/* Screenshot comparisons in the UDL audit */
+.audit-visuals{margin-top:3.2rem;border-top:1px solid var(--line);padding-top:2.2rem}
+.audit-visual-pairs{display:grid;gap:1.7rem}
+.audit-pair{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.3rem}
+.audit-pair h3{font-size:1.12rem;margin-bottom:1rem}
+.audit-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;align-items:start}
+.audit-comparison figure{margin:0;min-width:0}
+.audit-comparison img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain;object-position:top left;border:1px solid var(--line);border-radius:5px;background:#fff}
+.audit-comparison figcaption{font-size:.86rem;color:var(--sub);padding-top:.45rem}
+@media(max-width:700px){.audit-comparison{grid-template-columns:1fr}.audit-comparison img{max-height:500px}}

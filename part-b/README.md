@@ -31,6 +31,6 @@ Original main branch at the start of the Part B build: `0a9b7d4728158e0fee2ecc22
 - `assets/site.css` — responsive styles, focus states, accessible contrast, reduced-motion and print styles
 - `assets/lab.js` — two teacher-created cases; students record a credibility question, a dictionary check and their own translation, with an optional extension
 - All references to the original Australian Framework use the 2023 publication date; the 2024 review was endorsed in June 2025.
-- Curriculum connections include AC9LC8EC05 and relevant APST 2.6 and 4.5.
+- Curriculum connections include AC9LC8EC05 and AC9LC8EU03 for the advanced task, AC9LC8EU01 for pinyin support in the retrofit, and APST 2.6 and 4.5. AC9LC8EU04 primarily concerns language and identity, so it is not used here as a translation descriptor.
 
 No student logins, personal data, third-party scripts, cookies, or analytics are used by the portfolio itself. The optional MDBG dictionary link opens a separate third-party website and should be checked against school policy before classroom use.
