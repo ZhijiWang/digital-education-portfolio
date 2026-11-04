@@ -12,7 +12,11 @@ This directory is an independent **Part B website copy**. The Part A files at th
 
 ## Mandatory step before handing in
 
-Record a **new 4–5 minute video or audio walkthrough** for Part B. Embed it in `professional.html` where the recording slot currently appears. Update the draft script under the media block to a **verbatim transcript** of the actual recording. The old Part A recording is not reused.
+Record a **new 4–5 minute video or audio walkthrough** for Part B. Embed it in `professional.html` where the recording slot appears. Replace the draft script with a **verbatim transcript** of what was actually spoken; do not relabel the draft as a transcript. The old Part A recording is not reused.
+
+**Recording and accessibility checklist:** Show the audit's Before/After links, demonstrate the live Evidence Lab case and explain the teacher/student agency balance. Open captions for the video. If hosting on YouTube, use **Unlisted**, confirm the video opens without the viewer signing in, and give the embed iframe a descriptive `title`. Test playback and captions after publishing. When narrating the photo case, say **“Source B tells us the classmate has not replied yet; it does not confirm the photo has already been sent.”** Do not attribute this information to a message from the classmate.
+
+**No video file has yet been supplied to this repository.** The placeholder must remain until an authentic recorded file or hosted video link is available.
 
 The interactive task works offline in a browser after files are downloaded. It does not contact any AI service or persist student data to a server. If students copy their response into a school service, that service's data practices apply.
 
