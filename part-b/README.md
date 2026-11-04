@@ -18,7 +18,7 @@ The interactive task works offline in a browser after files are downloaded. It d
 
 ## Audit evidence
 
-The original Part A `citizenship.html` had keyboard-operable radio inputs, a privacy reminder, and a reflection prompt. The retrofitted original `citizenship.html` adds optional pinyin, a second scenario, chunked steps and a written response that can be copied or printed. A separate new advanced task `lab.html` includes labelled evidence cards, an independent dictionary check (or documented access limit), and explicit success criteria. The UDL audit lists precise Before and After links for each change. Large embedded page previews were removed. The audit also records a source-level accessibility inspection and a calculated text contrast ratio, while being explicit that VoiceOver/WAVE tests have not been run.
+The original Part A `citizenship.html` had keyboard-operable radio inputs, a privacy reminder, and a reflection prompt. The retrofitted original `citizenship.html` adds optional pinyin, a second scenario, chunked steps and a written response that can be copied or printed. A separate new advanced task `lab.html` includes labelled evidence cards, an independent dictionary check (or documented access limit), and explicit success criteria. The UDL audit lists precise Before and After links for each change. Large embedded page previews were removed. The retrofit log records source-level accessibility inspection and calculated text contrast ratios. VoiceOver and WAVE are separate checks to conduct before claiming screen-reader usability or a full accessibility audit.
 
 Original main branch at the start of the Part B build: `0a9b7d4728158e0fee2ecc22f483345478160eb1`.
 
