@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Student-facing evidence-checking activity for Years 7-8 Chinese."><title>Translation Evidence Lab | Digital Education Portfolio · Part B</title>
+<link rel="stylesheet" href="assets/site.css"></head><body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html">Digital Education Portfolio<small>Assessment 2B · Professional Portfolio</small></a>
+<nav class="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="inclusive.html">Inclusive Practice</a></li><li><a href="resources.html" aria-current="page">Teaching Resources</a></li><li><a href="professional.html">Professional Learning</a></li></ul></nav></div></header>
+<main id="main">
+<section class="page-intro shell student-app"><p class="eyebrow">Student task · Year 7–8 Chinese</p>
+<h1>Translation Evidence Lab</h1>
+<p class="page-lead">An AI translation can sound convincing. Can you check it against the original message and its context?</p>
+<div class="callout" id="privacy"><p><strong>Before you begin:</strong> Use the classroom examples here. Do not enter names, personal messages or passwords into AI tools. This activity works without an AI account.</p></div>
+<ol class="app-progress" aria-label="Activity stages"><li>1 · Read</li><li>2 · Check</li><li>3 · Revise</li></ol>
+</section>
+<section class="shell student-app lab-box" aria-labelledby="stage1">
+<p class="step-label">Stage 1 · Read the original</p><h2 id="stage1">Choose a situation</h2>
+<div class="scenario-top">
+<div class="field" style="flex:1;min-width:240px"><label for="case-select">Classroom situation</label>
+<select id="case-select"><option value="photo">A classmate request</option><option value="teacher">Thanking a teacher</option></select></div>
+<label class="mini" style="display:flex;gap:.55rem;align-items:center;margin-top:1.1rem"><input id="pinyin-toggle" type="checkbox" style="width:1.15rem;height:1.15rem;accent-color:var(--teal)"> Show pinyin</label>
+</div>
+<div class="chinese-box"><p class="step-label" style="margin:0">Original Chinese message</p>
+<p class="zh" id="chinese" lang="zh-Hans">你能帮我把照片发给老师吗？麻烦你了。</p>
+<p class="pinyin" id="pinyin" lang="zh-Latn-pinyin" hidden></p></div>
+<p><strong>Audience:</strong> <span id="audience"></span></p>
+</section>
+<section class="shell student-app lab-box" id="evidence" aria-labelledby="stage2">
+<p class="step-label">Stage 2 · Check the sources</p><h2 id="stage2">What does each source tell you?</h2>
+<div class="evidence-grid">
+<article class="evidence"><small>Source A · Generated-style</small><h3>Suggested translation</h3><p id="ai-candidate"></p><footer>Teacher-authored simulation of an AI output. Fluent wording is not proof of accuracy.</footer></article>
+<article class="evidence"><small>Source B · First-hand</small><h3>Message context</h3><p id="context"></p><footer>Teacher-created scenario. Check who is speaking and what has happened.</footer></article>
+<article class="evidence"><small>Source C · Explanation</small><h3>Language note</h3><p id="language-note"></p><footer>Teacher-authored explanation. Cross-check uncertain phrases in a class dictionary.</footer></article>
+</div>
+<details class="details"><summary>Need a clue? Questions to ask</summary>
+<p>Has the person already helped? Who is being addressed? Which source tells you about the speaker's purpose? You may use a school-approved dictionary or ask your teacher.</p></details>
+</section>
+<section class="shell student-app lab-box" id="response" aria-labelledby="stage3">
+<p class="step-label">Stage 3 · Revise and explain</p><h2 id="stage3">Make a reasoned translation</h2>
+<div class="field"><label for="revision">1. Your English translation</label><textarea id="revision" name="revision" placeholder="Write your revised translation in English."></textarea></div>
+<div class="field"><label for="evidence-select">2. Which evidence most influenced your decision?</label>
+<select id="evidence-select"><option value="">Choose one source</option>
+<option value="Original Chinese message">Original Chinese message</option>
+<option value="Source A — suggested translation">Source A · Suggested translation</option>
+<option value="Source B — message context">Source B · Message context</option>
+<option value="Source C — teacher language note">Source C · Teacher language note</option></select></div>
+<div class="field"><label for="reason">3. Explain why it suits the audience</label><textarea id="reason" placeholder="I chose this wording because…"></textarea></div>
+<div class="field"><label for="confidence">4. How confident are you?</label><select id="confidence"><option value="">Choose an option</option><option>Still checking</option><option>Somewhat confident</option><option>Confident, with evidence</option></select></div>
+<fieldset class="checks"><legend>Before handing in, check:</legend>
+<label><input type="checkbox"> I considered the speaker and situation.</label>
+<label><input type="checkbox"> I used evidence to explain my decision.</label>
+<label><input type="checkbox"> My response contains no private information.</label></fieldset>
+<div class="button-row"><button class="btn" type="button" id="build">Prepare response</button><button class="btn secondary" type="button" id="copy">Copy notes</button><button class="btn secondary" type="button" id="print">Print notes</button></div>
+<p class="inline-error" id="error" role="alert"></p>
+<p id="notice" role="status" class="mini" aria-live="polite">Your work stays in this browser until you copy or print it; the page does not submit it online.</p>
+<pre id="result" class="result" tabindex="-1" hidden aria-label="Prepared student response"></pre>
+<details class="details no-print"><summary>After you have written your answer: compare one possible revision</summary>
+<p><button type="button" class="btn secondary" id="reveal-model">Show a teacher example</button></p>
+<p id="model-note" class="mini" hidden></p></details>
+</section>
+<section class="section shell student-app no-print"><p class="fine">This is a practice resource, not an automatic marking tool. Your teacher will check the explanation and may ask you to revise. <a href="resources.html">Return to Teaching Resources</a>.</p></section>
+</main>
+<footer class="footer"><div class="shell footer-inner"><span>Secondary Languages · Digital Technologies · University of Canberra</span><span>Part B working copy · <a href="../index.html">Unchanged Part A</a></span></div></footer>
+<script src="assets/lab.js" defer></script></body></html>
