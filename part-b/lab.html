@@ -14,8 +14,8 @@
 <h2 id="learning-goal">Learning intention</h2>
 <p>I can check an English translation against the Chinese message, the situation and a source I can name.</p>
 <h3>Success criteria</h3><ul>
-<li>I can tell who made the suggested translation.</li>
-<li>I can look up a phrase and write down what I found, or explain why I could not check it.</li>
+<li>I can explain what I would check before trusting an online translation.</li>
+<li>I can compare a suggested translation with the situation and a named source.</li>
 <li>I can write my own English and use a detail from the situation to explain it.</li>
 </ul>
 </section>
@@ -36,28 +36,25 @@
 <section class="shell student-app lab-box" id="evidence" aria-labelledby="stage2">
 <p class="step-label">Stage 2 · Check the sources</p><h2 id="stage2">What does each source tell you?</h2>
 <div class="evidence-grid">
-<article class="evidence"><small>Source A · Simulated AI translation</small><h3>Suggested translation</h3><p id="ai-candidate"></p><footer>Teacher-authored simulation of an AI output. Fluent wording is not proof of accuracy.</footer></article>
+<article class="evidence"><small>Source A · Example translation</small><h3>English suggestion</h3><p id="ai-candidate"></p><footer>Teacher-written to resemble an AI translation; no model was run. Its origin is disclosed so you can assess it.</footer></article>
 <article class="evidence"><small>Source B · Classroom situation</small><h3>Message context</h3><p id="context"></p><footer>Teacher-created scenario. Check who is speaking and what has happened.</footer></article>
-<article class="evidence"><small>Source C · Teacher note</small><h3>Language note</h3><p id="language-note"></p><footer>Teacher-authored explanation. Cross-check uncertain phrases in a class dictionary.</footer></article>
+<article class="evidence"><small>Source C · Question to investigate</small><h3>What should you check?</h3><p id="language-note"></p><footer>This is a teacher-written question. Find the evidence yourself before deciding.</footer></article>
 </div>
 <div class="verification-panel" id="dictionary-check">
 <h3>Look up one word yourself</h3>
-<p>I wrote the three cards above. Now look up <strong id="lookup-term" lang="zh-Hans">麻烦</strong> in a dictionary. What does the definition help you understand? Look back at the situation before deciding how to translate the whole message.</p>
+<p>Find <strong id="lookup-term" lang="zh-Hans">麻烦</strong> in a dictionary or another teacher-approved source. Compare its meaning with Source A and Source B. Do they lead you to the same conclusion?</p>
 <p><a href="https://www.mdbg.net/chinese/dictionary" target="_blank" rel="noopener noreferrer" class="text-link">Open MDBG Chinese–English Dictionary (external site)</a></p>
 <p class="mini">Use this dictionary only if your teacher approves it. Search the displayed term without entering private information. If the site is inaccessible, use your classroom dictionary or explain what you could not verify.</p>
-<div class="field"><label for="lookup-finding">What did your independent check tell you?</label>
+<div class="field"><label for="lookup-finding">Which source did you check, and what did it tell you?</label>
 <textarea id="lookup-finding" rows="3" placeholder="Source checked: MDBG / class dictionary / not available. What did you learn, or what still needs checking?"></textarea></div>
 </div>
 <details class="details"><summary>Need a clue? Questions to ask</summary>
-<p>Has the person already helped? Who is being addressed? Which source tells you about the speaker's purpose? You may use a school-approved dictionary or ask your teacher.</p></details>
+<p>What does the Chinese actually say? Has the action already happened? Which source gives a word meaning, and which one tells you what is happening? The sources may disagree.</p></details>
 </section>
 <section class="shell student-app lab-box" id="response" aria-labelledby="stage3">
 <p class="step-label">Stage 3 · Revise and explain</p><h2 id="stage3">Make a reasoned translation</h2>
-<div class="field"><label for="source-status">1. Where did the suggested AI-style translation come from?</label>
-<select id="source-status"><option value="">Choose a source description</option>
-<option value="A live AI model, verified in this activity">A live AI model, verified in this activity</option>
-<option value="A teacher-authored simulation of an AI suggestion">A teacher-authored simulation of an AI suggestion</option>
-<option value="Origin unknown">Origin unknown</option></select></div>
+<div class="field"><label for="credibility-check">1. Before trusting Source A, what would you need to check?</label>
+<textarea id="credibility-check" rows="3" placeholder="Think about who made it, what context it was given, and how you could check its wording."></textarea></div>
 <div class="field"><label for="revision">2. Your English translation</label><textarea id="revision" name="revision" placeholder="Write your revised translation in English."></textarea></div>
 <div class="field"><label for="evidence-select">3. Which evidence most influenced your decision?</label>
 <select id="evidence-select"><option value="">Choose one source</option>
@@ -70,7 +67,7 @@
 <fieldset class="checks"><legend>Before handing in, check:</legend>
 <label><input type="checkbox"> I considered the speaker and situation.</label>
 <label><input type="checkbox"> I used evidence to explain my decision.</label>
-<label><input type="checkbox"> I recorded the source I checked or explained a verification limit.</label>
+<label><input type="checkbox"> I recorded the source I checked or explained why I could not check it.</label>
 <label><input type="checkbox"> My response contains no private information.</label></fieldset>
 <div class="button-row"><button class="btn" type="button" id="build">Prepare response</button><button class="btn secondary" type="button" id="copy">Copy notes</button><button class="btn secondary" type="button" id="print">Print notes</button></div>
 <p class="inline-error" id="error" role="alert"></p>
@@ -79,8 +76,12 @@
 <details class="details no-print"><summary>After you have written your answer: compare one possible revision</summary>
 <p><button type="button" class="btn secondary" id="reveal-model">Show a teacher example</button></p>
 <p id="model-note" class="mini" hidden></p></details>
+<details class="details" id="extension"><summary>Optional extension · If you already know more Chinese</summary>
+<p>Imagine a classmate helped you after school. When might you say <span lang="zh-Hans">麻烦你了</span>, <span lang="zh-Hans">谢谢</span> or <span lang="zh-Hans">辛苦了</span>? Compare two of these expressions and explain how the relationship and timing change your choice.</p>
+<div class="field"><label for="extension-response">Your comparison (optional)</label><textarea id="extension-response" rows="4" placeholder="In this situation I would say… because…"></textarea></div>
+</details>
 </section>
 <section class="section shell student-app no-print"><p class="fine">Your teacher will read your explanation and may ask you to change something. <a href="resources.html">Return to Teaching Resources</a>.</p></section>
 </main>
-<footer class="footer"><div class="shell footer-inner"><span>Secondary Languages · Digital Technologies · University of Canberra</span><span>Part B working copy · <a href="../index.html">Unchanged Part A</a></span></div></footer>
+<footer class="footer"><div class="shell footer-inner"><span>Secondary Languages · Digital Technologies · University of Canberra</span><span>Assessment 2B · <a href="../index.html">Unchanged Part A</a></span></div></footer>
 <script src="assets/lab.js" defer></script></body></html>
