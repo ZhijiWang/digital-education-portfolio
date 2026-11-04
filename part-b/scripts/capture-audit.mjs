@@ -12,11 +12,9 @@ async function open(rel){
  await page.goto(pathToFileURL(resolve(base,rel)).href,{waitUntil:'load'});
  await page.evaluate(()=>document.fonts.ready);
 }
-async function capture(path,locator,limit=570){
- const box=await locator.boundingBox();
- if(!box)throw Error('No visible bounding box: '+path);
- const rect={x:Math.max(0,box.x-12),y:Math.max(0,box.y-10),width:Math.min(1040,box.width+24),height:Math.min(limit,box.height+20)};
- await page.screenshot({path:resolve(output,path),clip:rect,animations:'disabled'});
+async function capture(path,locator){
+ await locator.scrollIntoViewIfNeeded();
+ await locator.screenshot({path:resolve(output,path),animations:'disabled',timeout:15000});
 }
 try{
  await open('citizenship.html');
