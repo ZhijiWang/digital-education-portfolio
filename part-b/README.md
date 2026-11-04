@@ -4,9 +4,11 @@ This directory is an independent **Part B website copy**. The Part A files at th
 
 - Part A (original): https://zhijiwang.github.io/digital-education-portfolio/
 - Part B (new): https://zhijiwang.github.io/digital-education-portfolio/part-b/
-- Student-facing task: [lab.html](lab.html)
-- UDL visual comparison: [inclusive.html](inclusive.html)
-- Approximate professional-statement/audit/justification word counts are intentionally kept near 400/200/500 respectively. Navigation, visual audit table, student tool and reference list are separate components. Check the unit's exact counting convention.
+- Retrofitted original Part A resource: [citizenship.html](citizenship.html)
+- New advanced student-facing task: [lab.html](lab.html)
+- UDL before-and-after comparison of the same original resource: [inclusive.html](inclusive.html)
+- Teaching philosophy, UDL audit summary, and justification are kept near the requested 400/200/500 words respectively, with a separate evidence-focused notes section on Professional Learning following the lecturer's cohort feedback.
+- **Word-count ambiguity to resolve before submission:** The written requirements say a maximum of 1,100 written words across pages, while the lecturer's cohort feedback mentions up to ~400 scholarly support notes in the walkthrough section. Do not assume those notes are exempt. Confirm the counting rule; trim or consolidate notes if the 1,100 includes them. The transcript is explicitly exempt.
 
 ## Mandatory step before handing in
 
@@ -16,7 +18,7 @@ The interactive task works offline in a browser after files are downloaded. It d
 
 ## Audit evidence
 
-The original Part A `citizenship.html` had keyboard-operable radio inputs, a privacy reminder, and a reflection prompt. The new task adds optional pinyin, choice of classroom scenario, separated evidence cards, and a written response that can be copied or printed. The comparison page displays both live pages using titled iframes.
+The original Part A `citizenship.html` had keyboard-operable radio inputs, a privacy reminder, and a reflection prompt. The retrofitted original `citizenship.html` adds optional pinyin, a second scenario, chunked steps and a written response that can be copied or printed. A separate new advanced task `lab.html` includes labelled evidence cards, an independent dictionary check (or documented access limit), and explicit success criteria. The audit comparison displays the original Part A resource and its revised counterpart in two titled frames.
 
 Original main branch at the start of the Part B build: `0a9b7d4728158e0fee2ecc22f483345478160eb1`.
 
@@ -25,4 +27,4 @@ Original main branch at the start of the Part B build: `0a9b7d4728158e0fee2ecc22
 - `assets/site.css` — responsive styles, focus states, accessible contrast, reduced-motion and print styles
 - `assets/lab.js` — two teacher-created cases and client-only response compilation
 
-No student logins, personal data, third-party scripts, cookies, or analytics are used by Part B.
+No student logins, personal data, third-party scripts, cookies, or analytics are used by the portfolio itself. The optional MDBG dictionary link opens a separate third-party website and should be checked against school policy before classroom use.

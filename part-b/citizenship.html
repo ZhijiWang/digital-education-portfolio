@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Can AI Translate This? Accessible retrofit of the original Assessment 2A Year 7–8 Chinese activity.">
+<title>Can AI Translate This? · UDL Retrofit | Digital Education Portfolio</title>
+<link rel="stylesheet" href="assets/site.css"></head>
+<body><a class="skip" href="#main">Skip to main content</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html">Digital Education Portfolio<small>Assessment 2B · Professional Portfolio</small></a>
+<nav class="site-nav" aria-label="Main navigation"><ul>
+<li><a href="index.html">Home</a></li><li><a href="inclusive.html">Inclusive Practice</a></li>
+<li><a href="resources.html" aria-current="page">Teaching Resources</a></li><li><a href="professional.html">Professional Learning</a></li>
+</ul></nav></div></header>
+<main id="main">
+<section class="page-intro shell student-app">
+<p class="eyebrow">Retrofitted Part A resource · Year 7–8 Chinese</p>
+<h1>Can AI Translate This?</h1>
+<p class="page-lead">When two English translations both sound reasonable, the situation helps you choose.</p>
+<p class="mini"><a href="../citizenship.html">View the original Part A version</a> · <a href="inclusive.html#retrofit-log">See what changed in the UDL retrofit</a></p>
+<div class="callout"><p><strong>Safe use:</strong> Work with the imaginary classroom examples below. Keep names, private messages and login details out of AI tools. This page does not connect to an AI service.</p></div>
+</section>
+<section class="shell student-app lab-box" id="example">
+<p class="step-label">Step 1 · Compare contexts</p>
+<h2>One Chinese phrase, different English</h2>
+<p>Look at <span lang="zh-Hans">不好意思</span>. The best English translation depends on what is happening.</p>
+<label class="mini" style="display:flex;align-items:center;gap:.65rem"><input id="retro-pinyin" type="checkbox" style="width:1.2rem;height:1.2rem"> Show optional pinyin</label>
+<div class="columns-3" style="margin-top:1rem">
+<article class="evidence"><small>Apologising</small><p lang="zh-Hans" class="zh" style="font-size:1.4rem">不好意思，我迟到了。</p><p class="pinyin retro-pronunciation" hidden>Bù hǎoyìsi, wǒ chídào le.</p><p>“Sorry, I'm late.”</p></article>
+<article class="evidence"><small>Getting attention</small><p lang="zh-Hans" class="zh" style="font-size:1.4rem">不好意思，请问洗手间在哪里？</p><p class="pinyin retro-pronunciation" hidden>Bù hǎoyìsi, qǐngwèn xǐshǒujiān zài nǎlǐ?</p><p>“Excuse me, where is the bathroom?”</p></article>
+<article class="evidence"><small>Asking a favour</small><p lang="zh-Hans" class="zh" style="font-size:1.4rem">真不好意思，又麻烦你了。</p><p class="pinyin retro-pronunciation" hidden>Zhēn bù hǎoyìsi, yòu máfan nǐ le.</p><p>“Sorry to bother you again.”</p></article>
+</div>
+<details class="details"><summary>Three things to check before choosing</summary>
+<ol><li>Who is speaking, and to whom?</li><li>What is the speaker trying to do?</li><li>Which English version fits that moment?</li></ol></details>
+</section>
+<section class="shell student-app lab-box" id="practice">
+<p class="step-label">Step 2 · Make a choice</p>
+<h2>Which translation would you use?</h2>
+<div class="field"><label for="retro-case">Choose a familiar classroom situation</label>
+<select id="retro-case"><option value="thanks">After a lesson: thank a teacher</option><option value="question">At school: ask for directions</option></select></div>
+<div class="chinese-box"><p class="step-label">Original message</p><p id="retro-chinese" class="zh" lang="zh-Hans"></p>
+<p class="pinyin retro-pronunciation" id="retro-phrase-pinyin" hidden></p>
+<p><strong>Situation:</strong> <span id="retro-context"></span></p></div>
+<fieldset class="checks" style="margin-top:0"><legend>Read the possible translations and select one.</legend>
+<div id="retro-options"></div></fieldset>
+</section>
+<section class="shell student-app lab-box" id="reflection">
+<p class="step-label">Step 3 · Explain and keep your reasoning</p>
+<h2>Explain your decision</h2>
+<div class="field"><label for="retro-reason">What in the situation makes your choice work?</label>
+<textarea id="retro-reason" placeholder="I chose this because the speaker is…"></textarea></div>
+<div class="button-row"><button class="btn" type="button" id="retro-prepare">Prepare response</button><button class="btn secondary" type="button" id="retro-copy">Copy notes</button><button class="btn secondary" type="button" id="retro-print">Print notes</button></div>
+<p class="inline-error" role="alert" id="retro-error"></p>
+<p class="mini" role="status" aria-live="polite" id="retro-status">Your explanation stays in your browser until you copy or print it.</p>
+<pre id="retro-result" class="result" tabindex="-1" hidden></pre>
+</section>
+<section class="section shell student-app"><p class="mini">Your teacher will read your reasoning; more than one translation may be defensible. For the advanced digital source investigation, <a href="lab.html">continue to the Translation Evidence Lab</a>.</p></section>
+</main>
+<footer class="footer"><div class="shell footer-inner"><span>Secondary Languages · University of Canberra</span><span><a href="../citizenship.html">Unchanged Part A original</a></span></div></footer>
+<script src="assets/retrofit.js" defer></script></body></html>

@@ -5,6 +5,7 @@ const cases={
     context:"A student is asking a classmate to send a photo. The classmate has not answered yet.",
     ai:"Could you send the photo to the teacher? Thanks for helping.",
     note:"麻烦你了 can acknowledge that you are asking someone for a favour. The best English wording depends on whether help is requested or already given.",
+    lookup:"麻烦",
     example:"Could you send the photo to the teacher for me? Sorry to trouble you.",
     audience:"Classmate; a request that has not yet been accepted"
   },
@@ -14,6 +15,7 @@ const cases={
     context:"After a long workshop, a student speaks to the teacher who stayed back to help.",
     ai:"Teacher, you have worked hard today.",
     note:"辛苦了 often acknowledges someone's effort. A natural English version may express appreciation rather than describe the effort literally.",
+    lookup:"辛苦",
     example:"Thanks for all your help today.",
     audience:"Teacher; appreciative message after help"
   }
@@ -27,6 +29,9 @@ function loadCase(){
  $("ai-candidate").textContent=c.ai;
  $("language-note").textContent=c.note;
  $("audience").textContent=c.audience;
+ $("lookup-term").textContent=c.lookup;
+ $("lookup-finding").value="";
+ $("source-status").value="";
  $("revision").value="";
  $("reason").value="";
  $("evidence-select").value="";
@@ -53,13 +58,15 @@ function buildResponse(){
  const revision=$("revision").value.trim();
  const reason=$("reason").value.trim();
  const evidence=$("evidence-select").value;
- if(!revision||!reason||!evidence){
-   $("error").textContent="Complete your revision, the evidence choice, and your reason first.";
+ const source=$("source-status").value;
+ const independent=$("lookup-finding").value.trim();
+ if(!revision||!reason||!evidence||!source||!independent){
+   $("error").textContent="Complete your source description, independent check (or its limit), revision, evidence choice and reason.";
    $("result").hidden=true;return "";
  }
  const c=cases[$("case-select").value];
  $("error").textContent="";
- return "Translation Evidence Lab — "+$("case-select").selectedOptions[0].text+"\nOriginal: "+c.chinese+"\nAI suggestion: "+c.ai+"\nMy revision: "+revision+"\nMost useful evidence: "+evidence+"\nMy reason: "+reason+"\nConfidence: "+($("confidence").value||"Not selected")+"\nChecked against: teacher-created classroom examples; original message and context.";
+ return "Translation Evidence Lab — "+$("case-select").selectedOptions[0].text+"\nOriginal: "+c.chinese+"\nAI-style suggestion: "+c.ai+"\nSuggestion provenance: "+source+"\nIndependent check: "+independent+"\nMy revision: "+revision+"\nMost useful evidence: "+evidence+"\nMy reason: "+reason+"\nConfidence: "+($("confidence").value||"Not selected")+"\nClassroom source cards: teacher-created examples.";
 }
 $("build").addEventListener("click",()=>{
  const output=buildResponse();if(!output)return;

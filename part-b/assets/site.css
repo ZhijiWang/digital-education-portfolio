@@ -95,3 +95,19 @@ textarea{min-height:110px;resize:vertical}
 @media(max-width:540px){body{font-size:16px}.shell{width:min(calc(100% - 2rem),var(--max))}.site-nav ul{gap:.25rem .65rem}.site-nav a{font-size:.81rem}.lab-box{padding:1.1rem}.compare-pane iframe{height:270px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 @media print{.site-header,.footer,.skip,.button-row,.app-progress,.no-print{display:none!important}body{background:#fff;color:#000}.shell{width:100%}.lab-box,.evidence{break-inside:avoid}textarea{border:1px solid #aaa}.result[hidden]{display:block}.compare-grid iframe{display:none}}
+
+/* Part B formative check and independent verification */
+.task-goals{background:#f1f5f0;border-left:5px solid var(--teal);margin:1.4rem 0 1.7rem}
+.task-goals h2{font-size:1.4rem}.task-goals h3{font-size:1.05rem}
+.task-goals ul{margin:0;padding-left:1.4rem}.task-goals li{margin:.3rem 0}
+.verification-panel{background:#f1f5f0;border-left:4px solid var(--teal);margin-top:1.25rem;padding:1.3rem 1.4rem;border-radius:0 8px 8px 0}
+.verification-panel h3{font-size:1.25rem;margin-bottom:.7rem}
+.verification-panel .field{margin-top:1.2rem}
+@media print{.verification-panel{background:#fff;border:1px solid #aaa}}
+
+/* Accessible choice controls for the retrofitted Part A resource */
+.retro-choice{display:flex;align-items:center;gap:.75rem;padding:.75rem;margin:.55rem 0;border:1px solid var(--line);border-radius:8px;background:#fff}
+.retro-choice input{height:1.15rem;width:1.15rem;flex:0 0 auto;accent-color:var(--teal)}
+.retro-choice:has(input:checked){border-color:var(--teal);background:var(--soft)}
+.retro-choice:focus-within{outline:3px solid var(--focus);outline-offset:3px}
+.retro-choice span{flex:1}

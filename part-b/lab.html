@@ -10,6 +10,15 @@
 <h1>Translation Evidence Lab</h1>
 <p class="page-lead">An AI translation can sound convincing. Can you check it against the original message and its context?</p>
 <div class="callout" id="privacy"><p><strong>Before you begin:</strong> Use the classroom examples here. Do not enter names, personal messages or passwords into AI tools. This activity works without an AI account.</p></div>
+<section class="panel task-goals" aria-labelledby="learning-goal">
+<h2 id="learning-goal">Learning intention</h2>
+<p>I can evaluate a digital translation claim using the original Chinese, the speaker's context, and a source I can identify.</p>
+<h3>Success criteria</h3><ul>
+<li>I can identify what an AI-style suggestion can and cannot prove.</li>
+<li>I can check a phrase with a named source and record what I found or still need to check.</li>
+<li>I can revise the English and explain my decision using evidence about the audience.</li>
+</ul>
+</section>
 <ol class="app-progress" aria-label="Activity stages"><li>1 · Read</li><li>2 · Check</li><li>3 · Revise</li></ol>
 </section>
 <section class="shell student-app lab-box" aria-labelledby="stage1">
@@ -31,23 +40,37 @@
 <article class="evidence"><small>Source B · First-hand</small><h3>Message context</h3><p id="context"></p><footer>Teacher-created scenario. Check who is speaking and what has happened.</footer></article>
 <article class="evidence"><small>Source C · Explanation</small><h3>Language note</h3><p id="language-note"></p><footer>Teacher-authored explanation. Cross-check uncertain phrases in a class dictionary.</footer></article>
 </div>
+<div class="verification-panel" id="dictionary-check">
+<h3>Check beyond the example</h3>
+<p>The source cards were written by the teacher. Check the word <strong id="lookup-term" lang="zh-Hans">麻烦</strong> in a second source. A dictionary can clarify a word's meanings; the original message still tells you how it is being used.</p>
+<p><a href="https://www.mdbg.net/chinese/dictionary" target="_blank" rel="noopener noreferrer" class="text-link">Open MDBG Chinese–English Dictionary (external site)</a></p>
+<p class="mini">Use this dictionary only if your teacher approves it. Search the displayed term without entering private information. If the site is inaccessible, use your classroom dictionary or explain what you could not verify.</p>
+<div class="field"><label for="lookup-finding">What did your independent check tell you?</label>
+<textarea id="lookup-finding" rows="3" placeholder="Source checked: MDBG / class dictionary / not available. What did you learn, or what still needs checking?"></textarea></div>
+</div>
 <details class="details"><summary>Need a clue? Questions to ask</summary>
 <p>Has the person already helped? Who is being addressed? Which source tells you about the speaker's purpose? You may use a school-approved dictionary or ask your teacher.</p></details>
 </section>
 <section class="shell student-app lab-box" id="response" aria-labelledby="stage3">
 <p class="step-label">Stage 3 · Revise and explain</p><h2 id="stage3">Make a reasoned translation</h2>
-<div class="field"><label for="revision">1. Your English translation</label><textarea id="revision" name="revision" placeholder="Write your revised translation in English."></textarea></div>
-<div class="field"><label for="evidence-select">2. Which evidence most influenced your decision?</label>
+<div class="field"><label for="source-status">1. Where did the suggested AI-style translation come from?</label>
+<select id="source-status"><option value="">Choose a source description</option>
+<option value="A live AI model, verified in this activity">A live AI model, verified in this activity</option>
+<option value="A teacher-authored simulation of an AI suggestion">A teacher-authored simulation of an AI suggestion</option>
+<option value="Origin unknown">Origin unknown</option></select></div>
+<div class="field"><label for="revision">2. Your English translation</label><textarea id="revision" name="revision" placeholder="Write your revised translation in English."></textarea></div>
+<div class="field"><label for="evidence-select">3. Which evidence most influenced your decision?</label>
 <select id="evidence-select"><option value="">Choose one source</option>
 <option value="Original Chinese message">Original Chinese message</option>
 <option value="Source A — suggested translation">Source A · Suggested translation</option>
 <option value="Source B — message context">Source B · Message context</option>
 <option value="Source C — teacher language note">Source C · Teacher language note</option></select></div>
-<div class="field"><label for="reason">3. Explain why it suits the audience</label><textarea id="reason" placeholder="I chose this wording because…"></textarea></div>
-<div class="field"><label for="confidence">4. How confident are you?</label><select id="confidence"><option value="">Choose an option</option><option>Still checking</option><option>Somewhat confident</option><option>Confident, with evidence</option></select></div>
+<div class="field"><label for="reason">4. Explain why it suits the audience</label><textarea id="reason" placeholder="I chose this wording because…"></textarea></div>
+<div class="field"><label for="confidence">5. How confident are you?</label><select id="confidence"><option value="">Choose an option</option><option>Still checking</option><option>Somewhat confident</option><option>Confident, with evidence</option></select></div>
 <fieldset class="checks"><legend>Before handing in, check:</legend>
 <label><input type="checkbox"> I considered the speaker and situation.</label>
 <label><input type="checkbox"> I used evidence to explain my decision.</label>
+<label><input type="checkbox"> I recorded the source I checked or explained a verification limit.</label>
 <label><input type="checkbox"> My response contains no private information.</label></fieldset>
 <div class="button-row"><button class="btn" type="button" id="build">Prepare response</button><button class="btn secondary" type="button" id="copy">Copy notes</button><button class="btn secondary" type="button" id="print">Print notes</button></div>
 <p class="inline-error" id="error" role="alert"></p>
