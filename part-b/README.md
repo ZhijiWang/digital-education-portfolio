@@ -10,15 +10,11 @@ This directory is an independent **Part B website copy**. The Part A files at th
 - Teaching philosophy, UDL audit summary, and justification are the three allocated written components. Additional academic notes follow the lecturer's cohort feedback and may have a separate allowance; confirm this before submission.
 - **Word-count ambiguity to resolve before submission:** The written requirements say a maximum of 1,100 written words across pages, while the lecturer's cohort feedback mentions up to ~400 scholarly support notes in the walkthrough section. Do not assume those notes are exempt. Confirm the counting rule; trim or consolidate notes if the 1,100 includes them. The transcript is explicitly exempt.
 
-## Mandatory step before handing in
+## Walkthrough recording
 
-Record a **new 4–5 minute video or audio walkthrough** for Part B. Embed it in `professional.html` where the recording slot appears. Replace the draft script with a **verbatim transcript** of what was actually spoken; do not relabel the draft as a transcript. The old Part A recording is not reused.
+The Part B Professional Learning page embeds the user's screen-recorded walkthrough at https://youtu.be/iUuwvLOhgEk and includes a readable transcript immediately underneath. The video discusses the UDL retrofit, the new Translation Evidence Lab, and all three ULOs.
 
-**Recording and accessibility checklist:** Show the audit's Before/After links, demonstrate the live Evidence Lab case and explain the teacher/student agency balance. Open captions for the video. If hosting on YouTube, use **Unlisted**, confirm the video opens without the viewer signing in, and give the embed iframe a descriptive `title`. Test playback and captions after publishing. When narrating the photo case, say **“Source B tells us the classmate has not replied yet; it does not confirm the photo has already been sent.”** Do not attribute this information to a message from the classmate.
-
-**No video file has yet been supplied to this repository.** The placeholder must remain until an authentic recorded file or hosted video link is available.
-
-The interactive task works offline in a browser after files are downloaded. It does not contact any AI service or persist student data to a server. If students copy their response into a school service, that service's data practices apply.
+Before final submission, open the published GitHub Pages website in a private/incognito window, verify the video plays without authentication, and check that YouTube captions are enabled and accurate. The written transcript has been prepared from the supplied spoken-content transcription with obvious speech-recognition errors cleaned up; it should be spot-checked against the uploaded video.
 
 ## Audit evidence
 
